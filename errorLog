@@ -1,0 +1,28 @@
+[error] 2021-07-13T03:53:20.007793Z nonode@nohost <0.7997.0> ade5df0bf3 req_err(3763885668) internal_server_error : No DB shards could be opened.
+hr_couchdb       |     [<<"fabric_util:get_shard/4 L111">>,<<"fabric_util:get_shard/4 L128">>,<<"fabric_util:get_shard/4 L128">>,<<"fabric:get_security/2 L183">>,<<"chttpd_auth_request:db_authorization_check/1 L110">>,<<"chttpd_auth_request:authorize_request/1 L19">>,<<"chttpd:handle_req_after_auth/2 L320">>,<<"chttpd:process_request/1 L305">>]
+
+
+
+ [error] 2021-07-13T05:10:37.142361Z nonode@nohost <0.474.0> 6fe6e9655b req_err(3763885668) internal_server_error : No DB shards could be opened.
+hr_couchdb       |     [<<"fabric_util:get_shard/4 L111">>,<<"fabric_util:get_shard/4 L128">>,<<"fabric_util:get_shard/4 L128">>,<<"fabric:get_security/2 L183">>,<<"chttpd_auth_request:db_authorization_check/1 L110">>,<<"chttpd_auth_request:authorize_request/1 L19">>,<<"chttpd:handle_req_after_auth/2 L320">>,<<"chttpd:process_request/1 L305">>]
+
+
+
+
+[debug] 2021-07-13T05:50:06.051322Z nonode@nohost <0.1098.0> aba4e2465c Failed to open shard <<"shards/00000000-7fffffff/medicines_sample.1626155316">> after: 100
+hr_couchdb       | [debug] 2021-07-13T05:50:06.052311Z nonode@nohost <0.3126.0> d91c9958c5 Failed to open shard <<"shards/00000000-7fffffff/medicines_sample.1626155316">> after: 100
+hr_couchdb       | [debug] 2021-07-13T05:50:06.052993Z nonode@nohost <0.3134.0> d7f04f2c0f Failed to open shard <<"shards/00000000-7fffffff/medicines_sample.1626155316">> after: 100
+hr_couchdb       | [debug] 2021-07-13T05:50:06.053079Z nonode@nohost <0.1136.0> 276d365f30 Failed to open shard <<"shards/00000000-7fffffff/medicines_sample.1626155316">> after: 100
+hr_couchdb       | [debug] 2021-07-13T05:50:06.054968Z nonode@nohost <0.1260.0> d48165faab Failed to open shard <<"shards/00000000-7fffffff/medicines_sample.1626155316">> after: 100
+hr_couchdb       | [debug] 2021-07-13T05:50:06.055080Z nonode@nohost <0.1088.0> 78b3425909 Failed to open shard <<"shards/00000000-7fffffff/medicines_sample.1626155316">> after: 100
+hr_couchdb       | [debug] 2021-07-13T05:50:06.080210Z nonode@nohost <0.1087.0> ad398d89d3 Failed to open shard <<"shards/00000000-7fffffff/medicines_sample.1626155316">> after: 100
+hr_couchdb       | [debug] 2021-07-13T05:50:06.253235Z nonode@nohost <0.3126.0> d91c9958c5 Failed to open shard <<"shards/80000000-ffffffff/medicines_sample.1626155316">> after: 200
+hr_couchdb       | [error] 2021-07-13T05:50:06.254634Z nonode@nohost <0.3126.0> d91c9958c5 req_err(1577439538) internal_server_error : No DB shards could be opened.
+hr_couchdb       |     [<<"fabric_util:get_shard/4 L111">>,<<"fabric_util:get_shard/4 L128">>,<<"fabric_util:get_shard/4 L128">>,<<"fabric:get_security/2 L183">>,<<"chttpd_auth_request:db_authorization_check/1 L110">>,<<"chttpd_auth_request:authorize_request/1 L19">>,<<"chttpd:handle_req_after_auth/2 L321">>,<<"chttpd:process_request/1 L306">>]
+hr_couchdb       | [debug] 2021-07-13T05:50:06.254836Z nonode@nohost <0.3134.0> d7f04f2c0f Failed to open shard <<"shards/80000000-ffffffff/medicines_sample.1626155316">> after: 200
+hr_couchdb       | [debug] 2021-07-13T05:50:06.255085Z nonode@nohost <0.1136.0> 276d365f30 Failed to open shard <<"shards/80000000-ffffffff/medicines_sample.1626155316">> after: 200
+hr_couchdb       | [notice] 2021-07-13T05:50:06.255725Z nonode@nohost <0.3126.0> d91c9958c5 localhost:5990 172.20.0.1 admin POST /medicines_sample/_bulk_docs 500 ok 1716
+hr_couchdb       | [error] 2021-07-13T05:50:06.256035Z nonode@nohost <0.3134.0> d7f04f2c0f req_err(1577439538) internal_server_error : No DB shards could be opened.
+hr_couchdb       |     [<<"fabric_util:get_shard/4 L111">>,<<"fabric_util:get_shard/4 L128">>,<<"fabric_util:get_shard/4 L128">>,<<"fabric:get_security/2 L183">>,<<"chttpd_auth_request:db_authorization_check/1 L110">>,<<"chttpd_auth_request:authorize_request/1 L19">>,<<"chttpd:handle_req_after_auth/2 L321">>,<<"chttpd:process_request/1 L306">>]
+hr_couchdb       | [error] 2021-07-13T05:50:06.256250Z nonode@nohost <0.1136.0> 276d365f30 req_err(1577439538) internal_server_error : No DB shards could be opened.
+hr_couchdb       |     [<<"fabric_util:get_shard/4 L111">>,<<"fabric_util:get_shard/4 L128">>,<<"fabric_util:get_shard/4 L128">>,<<"fabric:get_security/2 L183">>,<<"chttpd_auth_request:db_authorization_check/1 L110">>,<<"chttpd_auth_request:authorize_request/1 L19">>,<<"chttpd:handle_req_after_auth/2 L321">>,<<"chttpd:process_request/1 L306">>]

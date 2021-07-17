@@ -1,0 +1,13 @@
+{
+    "_id": "_design/by_name_composition",
+    "_rev": "2-b52c5ebfbde7185b2124a9b5d20556c5",
+    "views": {
+      "name": {
+        "map": "function (doc) {\n  emit(doc.name, doc);\n}"
+      },
+      "composition": {
+        "map": "function (doc) {\n  emit(doc.composition, doc);\n}"
+      }
+    },
+    "language": "javascript"
+  }
