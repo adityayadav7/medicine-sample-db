@@ -26,3 +26,36 @@ hr_couchdb       | [error] 2021-07-13T05:50:06.256035Z nonode@nohost <0.3134.0> 
 hr_couchdb       |     [<<"fabric_util:get_shard/4 L111">>,<<"fabric_util:get_shard/4 L128">>,<<"fabric_util:get_shard/4 L128">>,<<"fabric:get_security/2 L183">>,<<"chttpd_auth_request:db_authorization_check/1 L110">>,<<"chttpd_auth_request:authorize_request/1 L19">>,<<"chttpd:handle_req_after_auth/2 L321">>,<<"chttpd:process_request/1 L306">>]
 hr_couchdb       | [error] 2021-07-13T05:50:06.256250Z nonode@nohost <0.1136.0> 276d365f30 req_err(1577439538) internal_server_error : No DB shards could be opened.
 hr_couchdb       |     [<<"fabric_util:get_shard/4 L111">>,<<"fabric_util:get_shard/4 L128">>,<<"fabric_util:get_shard/4 L128">>,<<"fabric:get_security/2 L183">>,<<"chttpd_auth_request:db_authorization_check/1 L110">>,<<"chttpd_auth_request:authorize_request/1 L19">>,<<"chttpd:handle_req_after_auth/2 L321">>,<<"chttpd:process_request/1 L306">>]
+
+
+
+
+
+{
+    "_id": "org.couchdb.user:pharmacy",
+    "_rev": "3-f7f77a9a8a5e5abd39d1b9745b21b60a",
+    "name": "pharmacy",
+    "roles": [],
+    "type": "user",
+    "password_scheme": "pbkdf2",
+    "iterations": 10,
+    "derived_key": "0e482e460dae0044cb308bbc25422fb4cff52ecc",
+    "salt": "126103c4a014a7e34fd0a4433a175ff4"
+  }
+
+  userdb-706861726d616379
+
+  {
+    "_id": "user_ui_configuration",
+    "_rev": "1-e0715686a3d06871cb0b34237ab647dd",
+    "modules": {
+      "enabled": [
+        "pharamacy",
+        "patient"
+      ]
+    }
+  }
+// in permissions add "pharmacy" under members users
+
+
+  // function (doc) {\n  if(doc._id.indexOf('inventory')!==-1){\n    emit(doc.data.createdAt, doc);\n

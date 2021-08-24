@@ -1,8 +1,13 @@
 const nano = require('nano')('http://admin:password@localhost:5990/');
-const db = nano.use('medicines_sample')
+const db = nano.use('hospitalrun')
 // console.log(db)
 async function viewMDB(){
-    const  body = await db.view('by_name_code', 'new-view', { key: key.includes('Cheston Cold Tablet'), include_docs: true })
+  let keyTest = {
+    startkey: 'com',
+    endkey: `com\ufff0`,
+    include_docs: true 
+  }
+    const  body = await db.view('by_inventory', 'name', keyTest)
     console.log(body)
     body.rows.forEach((doc) => {
         console.log(doc.value)
